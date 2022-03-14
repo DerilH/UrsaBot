@@ -13,12 +13,15 @@
 
         get current() 
         {
-            return alert(this.#arr[0])
+            return this.#arr[0]
         }
 
         get empty()
         {
-            return this.#arr.length === 0;
+            if(this.#arr.length == 0) 
+            {
+                return true;
+            } else return false;
         }
 
         shift(count)
@@ -30,7 +33,7 @@
 
         next()
         {
-            this.#arr.shif();
+           this.previousSong = this.#arr.shift();
         }
     }
 module.exports = Queue

@@ -25,7 +25,6 @@ class CommandManager extends BaseClient {
             this.commands.push(command.data.toJSON());
             this.client.commands.set(command.data.name, command);
         }
-
     }
 
     deployCommandsLocal(guildId) {
